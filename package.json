@@ -1,0 +1,32 @@
+{
+  "name": "node_ts",
+  "version": "1.0.0",
+  "description": "A minimal nodejs app with ts",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts",
+    "start": "tsc && node ./build/app.js",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/will-nakagawa/node-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs"
+  ],
+  "author": "William Nakagawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/will-nakagawa/node-ts/issues"
+  },
+  "homepage": "https://github.com/will-nakagawa/node-ts#readme",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "express": "^4.17.1",
+    "ts-node-dev": "^1.0.0-pre.41",
+    "typescript": "^3.5.3"
+  }
+}

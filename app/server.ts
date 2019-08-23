@@ -84,5 +84,6 @@ function onListening() {
         ? 'pipe ' + addr
         : 'port ' + addr.port;
     debug('Listening on ' + bind);
-    console.log(`Node app running on ${addr.address}:${addr.port}`);
+
+    console.log('Node app running');
 }

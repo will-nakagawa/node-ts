@@ -1,15 +1,19 @@
-import Controller from './Controller';
+import {Controller} from './Controller';
 
 class ProductController extends Controller {
 
-    constructor(args: any, string: string) {
-        super(args, string);
+    constructor(args:any[]) {
+        super(args);
     }
 
-    public getAll(): any {
+    public getAll(): object {
         return this.res.json({products: []});
+    }
+
+    public getById(): object {
+        return this.res.json({_id: "12323qqeqwe"});
     }
 
 }
 
-export default ProductController; 
+export default ProductController;
